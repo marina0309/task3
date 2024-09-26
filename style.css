@@ -1,0 +1,163 @@
+body {
+    margin:0;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    /*цвет шапки*/
+
+    padding: 0;
+    margin:0;
+}
+.logo-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color:#AB42BC;
+}
+.picture-logo{
+    width:250px;
+    height:100px;
+    float:left;
+    margin:10px;
+}
+.title{
+    align-content: center;
+    text-align: center;
+    float: left;
+    margin: 10px;
+    /*цвет текста названия*/
+    color: white;
+}
+nav {
+    min-height: 120px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80%;
+    height:100%;
+    padding:0;
+    margin:0;
+    /*цвет фона меню с ссылками*/
+    background-color: blueviolet;
+}
+nav a{
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+ul{
+    padding: 0;
+}
+li{
+    margin: 5px 0 5px 0;
+}
+.content{
+    margin: 20px auto;
+     /*цвет фона контента*/
+     background-color:#FBDCFF;
+     padding: 20px;
+}
+.content-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+table {
+    font-size: 15px;
+    /*цвет границ таблицы*/
+    background-color: palegreen;
+}
+td, th{
+     /*цвет текста таблицы*/
+     color: white;
+    padding: 5px;
+}
+th{
+    /*цвет фона заголовков таблицы*/
+    background-color: #F08BFF;
+}
+
+/*нечетные элементы*/
+tr:nth-child(even){
+    background-color: #9D69A5;
+}
+/*четные элементы*/
+tr:nth-child(odd){
+    background-color: #C0AFC3;
+}
+
+form{
+    max-width: 80%;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    /*цвет фона формы*/
+    background-color: #FBDCFF;
+}
+
+
+footer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /*цвет подвала*/
+    background-color: #AB42BC;
+    height: 100px;
+}
+
+@media only screen and (min-width: 800px) {
+    html{
+        font-size: 20px;
+    }
+    nav{
+        height: auto;
+        max-width: 20%;
+        flex-direction: row;
+    }
+    .content-container{
+
+    }
+    .content:not(table){
+        font-size: 20px;
+    }
+    table{
+        font-size: 35px;
+    }
+    form{
+        font-size: 25px;
+        padding: 30px;
+    }
+    .logo-container{
+        align-content: start;
+        justify-content: start;
+    }
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .desktop {
+        display: flex;
+    }
+    .mobile {
+        display: none;
+    }
+}
